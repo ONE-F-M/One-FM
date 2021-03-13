@@ -1,0 +1,289 @@
+{
+ "creation": "2020-08-31 19:39:53.406596",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "category",
+  "amended_from",
+  "employee",
+  "section_break_4",
+  "first_name_arabic",
+  "second_name_arabic",
+  "third_name_arabic",
+  "last_name_arabic",
+  "column_break_15",
+  "first_name_english",
+  "second_name_english",
+  "third_name_english",
+  "last_name_english",
+  "section_break_20",
+  "one_fm_civil_id",
+  "centeralized_number",
+  "designation",
+  "place_of_birth",
+  "gender",
+  "birth_date",
+  "column_break_20",
+  "passport_number",
+  "passport_type",
+  "passport_issue_date",
+  "passport_expiry_date",
+  "nationality",
+  "section_break_23",
+  "company_pam_file_number",
+  "company_centralized_number",
+  "company_trade_name",
+  "company_email_id",
+  "paci_number",
+  "governorate",
+  "column_break_34",
+  "company_location",
+  "company_block_number",
+  "company_street_name",
+  "company_building_name",
+  "company_contact_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "First Time\nTransfer\nRenewal\nCancellation"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "MOI Residency Jawazat",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.date_of_birth",
+   "fieldname": "birth_date",
+   "fieldtype": "Read Only",
+   "label": "Birth Date"
+  },
+  {
+   "fieldname": "centeralized_number",
+   "fieldtype": "Read Only",
+   "label": "Centeralized Number"
+  },
+  {
+   "fetch_from": "employee.gender",
+   "fieldname": "gender",
+   "fieldtype": "Read Only",
+   "label": "Gender"
+  },
+  {
+   "fetch_from": "employee.one_fm_place_of_birth",
+   "fieldname": "place_of_birth",
+   "fieldtype": "Read Only",
+   "label": "Place of Birth"
+  },
+  {
+   "fetch_from": "employee.one_fm_first_name_in_arabic",
+   "fieldname": "first_name_arabic",
+   "fieldtype": "Read Only",
+   "label": "First Name Arabic"
+  },
+  {
+   "fetch_from": "employee.one_fm_second_name_in_arabic",
+   "fieldname": "second_name_arabic",
+   "fieldtype": "Read Only",
+   "label": "Second Name Arabic"
+  },
+  {
+   "fetch_from": "employee.one_fm_third_name_in_arabic",
+   "fieldname": "third_name_arabic",
+   "fieldtype": "Read Only",
+   "label": "Third Name Arabic"
+  },
+  {
+   "fetch_from": "employee.one_fm_last_name_in_arabic",
+   "fieldname": "last_name_arabic",
+   "fieldtype": "Read Only",
+   "label": "Last Name Arabic"
+  },
+  {
+   "fetch_from": "employee.first_name",
+   "fieldname": "first_name_english",
+   "fieldtype": "Read Only",
+   "label": "First Name English"
+  },
+  {
+   "fetch_from": "employee.middle_name",
+   "fieldname": "second_name_english",
+   "fieldtype": "Read Only",
+   "label": "Second Name English"
+  },
+  {
+   "fetch_from": "employee.one_fm_third_name",
+   "fieldname": "third_name_english",
+   "fieldtype": "Read Only",
+   "label": "Third Name English"
+  },
+  {
+   "fetch_from": "employee.last_name",
+   "fieldname": "last_name_english",
+   "fieldtype": "Read Only",
+   "label": "Last Name English"
+  },
+  {
+   "fetch_from": "employee.passport_number",
+   "fieldname": "passport_number",
+   "fieldtype": "Read Only",
+   "label": "Passport Number"
+  },
+  {
+   "fetch_from": "employee.one_fm_passport_type",
+   "fieldname": "passport_type",
+   "fieldtype": "Read Only",
+   "label": "Passport Type"
+  },
+  {
+   "fetch_from": "employee.date_of_issue",
+   "fieldname": "passport_issue_date",
+   "fieldtype": "Read Only",
+   "label": "Passport Issue Date"
+  },
+  {
+   "fetch_from": "employee.valid_upto",
+   "fieldname": "passport_expiry_date",
+   "fieldtype": "Read Only",
+   "label": "Passport Expiry Date"
+  },
+  {
+   "fetch_from": "employee.one_fm_nationality",
+   "fieldname": "nationality",
+   "fieldtype": "Read Only",
+   "label": "Nationality"
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Read Only",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "company_pam_file_number",
+   "fieldtype": "Read Only",
+   "label": "Company PAM File Number"
+  },
+  {
+   "fieldname": "company_centralized_number",
+   "fieldtype": "Read Only",
+   "label": "Company Centralized Number"
+  },
+  {
+   "fieldname": "company_trade_name",
+   "fieldtype": "Read Only",
+   "label": "Company Trade Name"
+  },
+  {
+   "fieldname": "company_email_id",
+   "fieldtype": "Read Only",
+   "label": "Company Email ID"
+  },
+  {
+   "fieldname": "paci_number",
+   "fieldtype": "Read Only",
+   "label": "PACI Number"
+  },
+  {
+   "fieldname": "company_location",
+   "fieldtype": "Read Only",
+   "label": "Company Location"
+  },
+  {
+   "fieldname": "company_block_number",
+   "fieldtype": "Read Only",
+   "label": "Company Block Number"
+  },
+  {
+   "fieldname": "company_street_name",
+   "fieldtype": "Read Only",
+   "label": "Company Street Name"
+  },
+  {
+   "fieldname": "company_building_name",
+   "fieldtype": "Read Only",
+   "label": "Company Building Name"
+  },
+  {
+   "fieldname": "company_contact_number",
+   "fieldtype": "Read Only",
+   "label": "Company Contact Number"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.one_fm_civil_id",
+   "fieldname": "one_fm_civil_id",
+   "fieldtype": "Read Only",
+   "label": "Civil ID Number",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "governorate",
+   "fieldtype": "Read Only",
+   "label": "Governorate"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-01-21 14:43:22.512035",
+ "modified_by": "Administrator",
+ "module": "GRD",
+ "name": "MOI Residency Jawazat",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
